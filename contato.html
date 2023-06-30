@@ -7,24 +7,43 @@
     </head>
     <body>
         <header>
-            <h1>Contato - SoulPorto Notícias</h1>
-
             <nav>
                 <a href="index.html">Início</a>
             </nav>
+            <hr>
+            <h1>SoulPorto Notícias</h1>
         </header>
+        <hr>
         <main>
-
+            <fieldset>
+                <legend><h2>Entre em contato conosco</h2></legend>
+                <form action="" method="get">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" maxlength="60" required><br><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="email" maxlength="60" required placeholder="exemplo@email.com"><br><br>
+                    <label for="assunto">Assunto:</label><br>
+                    <select name="assunto" id="assunto" required>
+                        <option value="" disabled selected>Selecione um Assunto</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="Anuncio">Anúncio</option>
+                        <option value="solicitacao">Solicitação</option>
+                    </select><br><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="10" cols="40" minlength="30" maxlength="400" required placeholder="Digite sua mensagem aqui."></textarea><br><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+            </fieldset>
         </main>
+        <hr>
         <footer>
-            &copy; Todos os direitos reservados a SoulPorto Notícias.
-            <nav>
-                <a href="https://www.facebook.com">Facebook</a>
-                <a href="https://www.instagram.com">Instagram</a>
-                <a href="https://www.twitter.com">Twitter</a>
-                <a href="https://www.youtube.com">YouTube</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+            <p>&copy; Todos os direitos reservados a SoulPorto Notícias.</p>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.youtube.com">YouTube</a>
         </footer>
     </body>
 </html>
